@@ -1,13 +1,254 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My cafeteria</title>
-    <link rel="stylesheet" href="index.css">
+    <meta name="description" content="Neon Cyber Agency: We Build. We Secure. We Innovate. Providing IT, Cyber Security, Web & Digital Solutions.">
+    <title>Neon Cyber Agency</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Custom Neon Glow Effects */
+        .neon-glow {
+            text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 15px #00ffff;
+        }
+        .neon-border {
+            border: 1px solid rgba(0, 255, 255, 0.3);
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+        }
+        .neon-hover:hover {
+            box-shadow: 0 0 20px #00ffff, 0 0 30px #00ffff;
+            transition: box-shadow 0.3s ease-in-out;
+        }
+        .glassmorphic {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        body {
+            background: linear-gradient(to bottom, #0a0a0a, #1a1a2e);
+        }
+    </style>
 </head>
-<body>
-    <h1>This is my cafeteria</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, odio quibusdam! Eum blanditiis, fugiat eaque aliquid impedit iure vitae quos culpa provident nulla incidunt vel odio ad voluptatem dignissimos error!</p>
+<body class="text-white font-sans antialiased">
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 glassmorphic">
+        <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+            <!-- Logo -->
+            <h1 class="text-3xl font-bold neon-glow text-cyan-400">Neon Cyber Agency</h1>
+            <!-- Navigation -->
+            <nav class="hidden md:flex space-x-6">
+                <a href="#" class="hover:text-cyan-300 transition">Home</a>
+                <a href="#services" class="hover:text-cyan-300 transition">Services</a>
+                <a href="#why-us" class="hover:text-cyan-300 transition">Why Us</a>
+                <a href="#testimonials" class="hover:text-cyan-300 transition">Testimonials</a>
+                <a href="#contact" class="hover:text-cyan-300 transition">Contact</a>
+            </nav>
+            <!-- Search Bar -->
+            <input type="search" placeholder="Search tools/services..." class="bg-transparent border neon-border rounded px-4 py-2 text-white placeholder-gray-400 focus:outline-none focus:border-cyan-300">
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-24 text-center bg-gradient-to-br from-purple-900/50 to-cyan-900/50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-5xl md:text-6xl font-extrabold neon-glow mb-4">We Build. We Secure. We Innovate.</h2>
+            <p class="text-xl md:text-2xl mb-8">Premier IT, Cyber Security, Web & Digital Solutions for the Future.</p>
+            <div class="space-x-4">
+                <button class="bg-gradient-to-r from-cyan-500 to-blue-500 text-black px-6 py-3 rounded-lg font-bold hover:neon-hover">Get Started</button>
+                <button class="border neon-border px-6 py-3 rounded-lg hover:bg-cyan-500/20 transition">Contact Us</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Cards Grid -->
+    <section class="py-16">
+        <div class="container mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            <!-- Founder & CEO -->
+            <div class="glassmorphic rounded-lg p-6 neon-hover neon-border text-center">
+                <i class="fas fa-user-tie text-4xl text-cyan-400 mb-4 neon-glow"></i>
+                <h3 class="text-xl font-bold mb-2">Founder & CEO</h3>
+                <p class="mb-4 text-gray-300">Meet our visionary leader driving innovation.</p>
+                <button class="bg-gradient-to-r from-purple-500 to-pink-500 px-4 py-2 rounded hover:neon-hover font-bold">Explore</button>
+            </div>
+            <!-- Our Services -->
+            <div class="glassmorphic rounded-lg p-6 neon-hover neon-border text-center">
+                <i class="fas fa-cogs text-4xl text-purple-400 mb-4 neon-glow"></i>
+                <h3 class="text-xl font-bold mb-2">Our Services</h3>
+                <p class="mb-4 text-gray-300">Discover our range of cutting-edge solutions.</p>
+                <button class="bg-gradient-to-r from-purple-500 to-pink-500 px-4 py-2 rounded hover:neon-hover font-bold">Explore</button>
+            </div>
+            <!-- Our Clients -->
+            <div class="glassmorphic rounded-lg p-6 neon-hover neon-border text-center">
+                <i class="fas fa-users text-4xl text-pink-400 mb-4 neon-glow"></i>
+                <h3 class="text-xl font-bold mb-2">Our Clients</h3>
+                <p class="mb-4 text-gray-300">Trusted by industry leaders worldwide.</p>
+                <button class="bg-gradient-to-r from-purple-500 to-pink-500 px-4 py-2 rounded hover:neon-hover font-bold">Explore</button>
+            </div>
+            <!-- Team Members -->
+            <div class="glassmorphic rounded-lg p-6 neon-hover neon-border text-center">
+                <i class="fas fa-user-friends text-4xl text-cyan-400 mb-4 neon-glow"></i>
+                <h3 class="text-xl font-bold mb-2">Team Members</h3>
+                <p class="mb-4 text-gray-300">Our expert team of innovators.</p>
+                <button class="bg-gradient-to-r from-purple-500 to-pink-500 px-4 py-2 rounded hover:neon-hover font-bold">Explore</button>
+            </div>
+            <!-- Support / Report an Issue -->
+            <div class="glassmorphic rounded-lg p-6 neon-hover neon-border text-center">
+                <i class="fas fa-headset text-4xl text-purple-400 mb-4 neon-glow"></i>
+                <h3 class="text-xl font-bold mb-2">Support / Report an Issue</h3>
+                <p class="mb-4 text-gray-300">24/7 assistance for all your needs.</p>
+                <button class="bg-gradient-to-r from-purple-500 to-pink-500 px-4 py-2 rounded hover:neon-hover font-bold">Explore</button>
+            </div>
+            <!-- Contact Us -->
+            <div class="glassmorphic rounded-lg p-6 neon-hover neon-border text-center">
+                <i class="fas fa-envelope text-4xl text-pink-400 mb-4 neon-glow"></i>
+                <h3 class="text-xl font-bold mb-2">Contact Us</h3>
+                <p class="mb-4 text-gray-300">Get in touch with our team.</p>
+                <button class="bg-gradient-to-r from-purple-500 to-pink-500 px-4 py-2 rounded hover:neon-hover font-bold">Explore</button>
+            </div>
+            <!-- Donations -->
+            <div class="glassmorphic rounded-lg p-6 neon-hover neon-border text-center">
+                <i class="fas fa-hand-holding-heart text-4xl text-cyan-400 mb-4 neon-glow"></i>
+                <h3 class="text-xl font-bold mb-2">Donations</h3>
+                <p class="mb-4 text-gray-300">Support our innovative projects.</p>
+                <button class="bg-gradient-to-r from-purple-500 to-pink-500 px-4 py-2 rounded hover:neon-hover font-bold">Explore</button>
+            </div>
+            <!-- Achievements -->
+            <div class="glassmorphic rounded-lg p-6 neon-hover neon-border text-center">
+                <i class="fas fa-trophy text-4xl text-purple-400 mb-4 neon-glow"></i>
+                <h3 class="text-xl font-bold mb-2">Achievements</h3>
+                <p class="mb-4 text-gray-300">Our milestones and awards.</p>
+                <button class="bg-gradient-to-r from-purple-500 to-pink-500 px-4 py-2 rounded hover:neon-hover font-bold">Explore</button>
+            </div>
+            <!-- Ratings & Reviews -->
+            <div class="glassmorphic rounded-lg p-6 neon-hover neon-border text-center">
+                <i class="fas fa-star text-4xl text-pink-400 mb-4 neon-glow"></i>
+                <h3 class="text-xl font-bold mb-2">Ratings & Reviews</h3>
+                <p class="mb-4 text-gray-300">What our clients say.</p>
+                <button class="bg-gradient-to-r from-purple-500 to-pink-500 px-4 py-2 rounded hover:neon-hover font-bold">Explore</button>
+            </div>
+            <!-- VIP Tools / Exclusive Tools -->
+            <div class="glassmorphic rounded-lg p-6 neon-hover neon-border text-center">
+                <i class="fas fa-tools text-4xl text-cyan-400 mb-4 neon-glow"></i>
+                <h3 class="text-xl font-bold mb-2">VIP Tools / Exclusive Tools</h3>
+                <p class="mb-4 text-gray-300">Premium tools for elite clients.</p>
+                <button class="bg-gradient-to-r from-purple-500 to-pink-500 px-4 py-2 rounded hover:neon-hover font-bold">Explore</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-gradient-to-br from-blue-900/50 to-purple-900/50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center neon-glow mb-12">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="glassmorphic rounded-lg p-6 neon-hover neon-border text-center">
+                    <i class="fas fa-code text-4xl text-cyan-400 mb-4 neon-glow"></i>
+                    <h3 class="text-xl font-bold mb-2">Web Development</h3>
+                    <p class="text-gray-300">Cutting-edge websites tailored to your needs.</p>
+                </div>
+                <div class="glassmorphic rounded-lg p-6 neon-hover neon-border text-center">
+                    <i class="fas fa-mobile-alt text-4xl text-purple-400 mb-4 neon-glow"></i>
+                    <h3 class="text-xl font-bold mb-2">App Development</h3>
+                    <p class="text-gray-300">Innovative mobile and web apps.</p>
+                </div>
+                <div class="glassmorphic rounded-lg p-6 neon-hover neon-border text-center">
+                    <i class="fas fa-shield-alt text-4xl text-pink-400 mb-4 neon-glow"></i>
+                    <h3 class="text-xl font-bold mb-2">Cyber Security</h3>
+                    <p class="text-gray-300">Robust protection against threats.</p>
+                </div>
+                <div class="glassmorphic rounded-lg p-6 neon-hover neon-border text-center">
+                    <i class="fas fa-user-secret text-4xl text-cyan-400 mb-4 neon-glow"></i>
+                    <h3 class="text-xl font-bold mb-2">Ethical Hacking</h3>
+                    <p class="text-gray-300">Proactive security testing.</p>
+                </div>
+                <div class="glassmorphic rounded-lg p-6 neon-hover neon-border text-center">
+                    <i class="fas fa-cloud text-4xl text-purple-400 mb-4 neon-glow"></i>
+                    <h3 class="text-xl font-bold mb-2">Cloud Solutions</h3>
+                    <p class="text-gray-300">Scalable cloud infrastructure.</p>
+                </div>
+                <div class="glassmorphic rounded-lg p-6 neon-hover neon-border text-center">
+                    <i class="fas fa-life-ring text-4xl text-pink-400 mb-4 neon-glow"></i>
+                    <h3 class="text-xl font-bold mb-2">IT Support</h3>
+                    <p class="text-gray-300">Reliable technical assistance.</p>
+                </div>
+                <div class="glassmorphic rounded-lg p-6 neon-hover neon-border text-center">
+                    <i class="fas fa-chart-line text-4xl text-cyan-400 mb-4 neon-glow"></i>
+                    <h3 class="text-xl font-bold mb-2">Digital Marketing</h3>
+                    <p class="text-gray-300">Strategic online growth.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="why-us" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center neon-glow mb-12">Why Choose Us</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="glassmorphic rounded-lg p-6 neon-hover neon-border text-center">
+                    <i class="fas fa-rocket text-4xl text-cyan-400 mb-4 neon-glow"></i>
+                    <h3 class="text-xl font-bold mb-2">Fast Delivery</h3>
+                    <p class="text-gray-300">Timely project completion without compromise.</p>
+                </div>
+                <div class="glassmorphic rounded-lg p-6 neon-hover neon-border text-center">
+                    <i class="fas fa-lock text-4xl text-purple-400 mb-4 neon-glow"></i>
+                    <h3 class="text-xl font-bold mb-2">Secure Systems</h3>
+                    <p class="text-gray-300">State-of-the-art security protocols.</p>
+                </div>
+                <div class="glassmorphic rounded-lg p-6 neon-hover neon-border text-center">
+                    <i class="fas fa-users-cog text-4xl text-pink-400 mb-4 neon-glow"></i>
+                    <h3 class="text-xl font-bold mb-2">Expert Team</h3>
+                    <p class="text-gray-300">Seasoned professionals at your service.</p>
+                </div>
+                <div class="glassmorphic rounded-lg p-6 neon-hover neon-border text-center">
+                    <i class="fas fa-headset text-4xl text-cyan-400 mb-4 neon-glow"></i>
+                    <h3 class="text-xl font-bold mb-2">24/7 Support</h3>
+                    <p class="text-gray-300">Round-the-clock assistance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials & Ratings -->
+    <section id="testimonials" class="py-16 bg-gradient-to-br from-purple-900/50 to-blue-900/50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center neon-glow mb-12">Testimonials & Ratings</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="glassmorphic rounded-lg p-6 neon-border">
+                    <p class="mb-4 text-gray-300">"Exceptional service and innovative solutions!"</p>
+                    <div class="text-yellow-400 mb-2">★★★★★</div>
+                    <p class="font-bold">- John Doe, CEO</p>
+                </div>
+                <div class="glassmorphic rounded-lg p-6 neon-border">
+                    <p class="mb-4 text-gray-300">"Top-notch security and support."</p>
+                    <div class="text-yellow-400 mb-2">★★★★★</div>
+                    <p class="font-bold">- Jane Smith, CTO</p>
+                </div>
+                <div class="glassmorphic rounded-lg p-6 neon-border">
+                    <p class="mb-4 text-gray-300">"Futuristic design and reliable delivery."</p>
+                    <div class="text-yellow-400 mb-2">★★★★★</div>
+                    <p class="font-bold">- Alex Johnson, Founder</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="py-8 glassmorphic">
+        <div class="container mx-auto px-4 text-center">
+            <!-- Social Media Icons -->
+            <div class="space-x-6 mb-4">
+                <a href="#" class="text-cyan-400 hover:text-cyan-300"><i class="fab fa-facebook-f text-2xl"></i></a>
+                <a href="#" class="text-cyan-400 hover:text-cyan-300"><i class="fab fa-twitter text-2xl"></i></a>
+                <a href="#" class="text-cyan-400 hover:text-cyan-300"><i class="fab fa-linkedin-in text-2xl"></i></a>
+                <a href="#" class="text-cyan-400 hover:text-cyan-300"><i class="fab fa-instagram text-2xl"></i></a>
+            </div>
+            <p>Copyright © 2025 Neon Cyber Agency</p>
+            <p class="mt-2"><a href="#" class="hover:text-cyan-300">Privacy Policy</a> | <a href="#" class="hover:text-cyan-300">Terms</a></p>
+        </div>
+    </footer>
+
 </body>
-</html> -->
+</html>
